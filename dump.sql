@@ -1,0 +1,9 @@
+CREATE DATABASE login;
+USE login;
+
+CREATE TABLE `usuarios` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `usuario` VARCHAR(20) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `senha` VARCHAR(32) NOT NULL,
+  PRIMARY KEY (`id`));

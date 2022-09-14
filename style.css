@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    background-color: #01282e;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    z-index: 1;
+}
+
+nav .menu1, nav .menu2{
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 5px 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+nav ul li a.active, nav ul li a:hover{
+    background-color: #f88f06;
+    border-radius: 4px;
+}
+
+section .text-write{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    top: 7rem;
+}
+
+.section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10rem;
+    height: auto;
+    flex-wrap: wrap;
+}
+section h1{
+    text-align: center;
+}
+
+.text{
+    max-width: 600px;
+
+}
+
+.text h1{
+    display: block;
+}
+.lern-more{
+    position: relative;
+    top: 14rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 0.7rem;
+    background-color: #f88f06;
+}
+.lern-more p{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+.morec{
+    display: none;
+}
+.header-none{
+    display: none;
+}
+.header-more{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: 16rem;
+}
+.header-more div{
+    width: 80%;
+}
+.header-more div h1{
+    text-align: center;
+}
+.header-more div p{
+    margin-top: 25px;
+}
+.header-more div .img img{
+    position: relative;
+    left: 3rem;
+    width: 100%;
+    height: 300px;
+}
+.open2,.open3{
+    display: none;
+}
+footer{
+    padding-top: 5rem;
+    color: white;
+    position: relative;
+    top: 24rem;
+    background-color: #01282e;
+    width: 100%;
+    min-height: 300px;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+footer h2{
+    font-size: 3rem;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    color: #1ed760;;
+}
+footer div ion-icon{
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 0.3rem;
+}
+footer #foot{
+    margin-top: 10rem;
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    height: auto;
+    color: #919496;
+    font-size: 0.8rem;
+}
+footer #foot div ul{
+    display: flex;
+}
+footer #foot div ul li{
+    padding: 0.7rem;
+}
+
+@media (max-width:900px){
+
+    .header-more div h1{
+        font-size: 1.5rem;
+    }
+
+    nav .menu2{
+        display: block;
+    }
+
+    nav #ul{
+        left: -100%;
+        position: fixed;
+        top: 12vh;
+        height: 88vh;
+        background-color: #003840;
+        width: 100%;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    nav #ul.open{
+        left: 0;
+    }
+
+    nav #ul ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .open2{
+        display: block;
+        font-size: 2.5rem;
+    }
+    
+    .open3{
+        display: none;
+    }
+    .text{
+        margin-top: 2rem;
+    }
+    section .text-write{
+        font-size: 2rem;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+    }
+    footer div ul{
+        margin-top: 2rem;
+    }
+
+}
+
